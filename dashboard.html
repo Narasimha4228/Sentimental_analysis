@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Analysis Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js" defer></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Logo">
+            <h3>Social Analytics</h3>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i>Analytics</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-bar">
+                <input type="search" placeholder="Search...">
+            </div>
+            <div class="user-profile">
+                <span class="notifications">🔔</span>
+                <img src="../assets/images/profile.jpg" alt="Profile" class="profile-pic">
+            </div>
+        </header>
+
+        <div class="dashboard-container">
+            <h1>Social Media Analytics Overview</h1>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Followers</h3>
+                    <p class="stat-number">1.2M</p>
+                    <span class="trend positive">↑ 12.5%</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Engagement Rate</h3>
+                    <p class="stat-number">4.8%</p>
+                    <span class="trend positive">↑ 2.1%</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Posts</h3>
+                    <p class="stat-number">856</p>
+                    <span class="trend neutral">→ 0.5%</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Conversion Rate</h3>
+                    <p class="stat-number">2.4%</p>
+                    <span class="trend negative">↓ 1.2%</span>
+                </div>
+            </div>
+
+            <div class="platform-grid">
+                <section class="platform-card facebook">
+                    <h2>Facebook Insights</h2>
+                    <canvas id="facebook-chart"></canvas>
+                </section>
+
+                <section class="platform-card youtube">
+                    <h2>YouTube Analytics</h2>
+                    <canvas id="youtube-chart"></canvas>
+                </section>
+
+                <section class="platform-card twitter">
+                    <h2>Twitter Metrics</h2>
+                    <canvas id="twitter-chart"></canvas>
+                </section>
+
+                <section class="platform-card instagram">
+                    <h2>Instagram Stats</h2>
+                    <canvas id="instagram-chart"></canvas>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
